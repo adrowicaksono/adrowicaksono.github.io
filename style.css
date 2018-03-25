@@ -1,54 +1,136 @@
+/* latin */
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v6/1cXxaUPXBpj2rGoU7C9WiHGF.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 * {
     margin: 0;
     padding: 0;
   }
   body {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Righteous', cursive;
     background-color: gray;
-    background-position: top center;
+
   }
+
   header {
+    box-sizing: border-box;
     width: 100%;
-    height: 80px;
-    background-color: #333;
+    height: 50px;
+    background-color: rgba(51,51,51,0.5);
     position: fixed;
-    z-index: 1;
+    z-index: 3;
   }
-  
+
+  nav {
+    line-height: 50px;
+    text-align: center;
+  }
+
+  #nav{
+    text-align: center;
+    margin: 0 20px;
+    color:#fff;
+    text-decoration-line: none;
+    text-transform: uppercase;
+
+  }
+
+
+
+  nav a:hover{
+    box-sizing: border-box;
+    background-color: wheat;
+    padding : 15px;
+    color: rgb(11, 11, 100);
+  }
+
+
+  #background{
+    margin: auto;
+    background-color: grey;
+    background-image:url("img/footer.jpeg");
+    background-position: top center;
+    background-size:100%;
+    width:  1300px;
+    height: 670px;
+  }
+
+  #welcome{
+    color: whitesmoke;
+    padding-top:70px;
+    padding-left: 30px; 
+    text-align: left;
+  }
+
+  #resume {
+    border: 1px solid white;
+    display: inline;
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  #resume a{
+    text-decoration-line: none;
+    color: white;
+  }
+
+  #resume a:hover{
+    box-sizing: border;
+    padding:15px;
+    background-color: white;
+    color:red;
+  }
+
+
 
   #main-content {
     position: relative;
-    top: 80px;
     background-color: #fff;
-    width: 1150px;
+    width: 1300px;
+    padding-bottom: 5px;
     margin: auto;
-    padding: 15px;
-    text-align: justify;
     min-height: 300px;
+    z-index: 2;
   }
   
-  #left-content {
-    width: 70%;
-    float: left;
-    min-height: 200px;
-    background-color: yellow;
+  #content {
+    width: 1300px;
+    padding-top: 90px;  
+    height: 850px;
+    margin: auto;
+    text-align: center;
     
   }
-  #right-content {
-    margin-left: 5%;
-    width: 25%;
-    float: left;
-    min-height: 200px;
-    background-color: red;
-  }
+  
   footer{
-      position: relative;
-      top: 80px;
+      position: fixed;
+      bottom:0;
+      margin: auto;
       width:100%;
-      background-color: violet;
-      height:50px;
+      background-color: rgb(42, 48, 80);
+      height:80px;
+      color: white;
+      text-align: center;
+      z-index:4;
   }
+
+  footer p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+  }
+  footer a{
+    margin: 10px;
+  }
+
   
   
   
